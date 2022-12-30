@@ -1,0 +1,104 @@
+/*
+================================
+|							   |
+|             /docs            |
+|							   |
+================================
+*/
+#docs-left{
+	width: 20%;
+	min-width: 64px;
+	transition: width 0.75s, opacity 0.5s linear;
+	position: relative;
+}
+@media (max-width: 992px) {
+	#docs-left {
+		position: absolute;
+		overflow: hidden !important;
+	}
+}
+#docs-left.opened{
+	width: 100% !important;
+	/*
+	or still position: absolute; if the animation has to be without any quirky jump, but that results in a wrong bottom alignment
+	*/
+	position: relative;
+}
+
+#docs-gap_lr{
+	width: 0%;
+	transition: width 0.75s;
+}
+#docs-gap_lr.opened{
+	width: 100% !important;
+}
+
+#docs-right{
+	width: 100%;
+	padding: 20px;
+	opacity: 1;
+	transition: width 0.75s, height 0.75s, opacity 0.5s linear;
+	
+}
+@media (max-width: 992px) {
+	#docs-right{
+		margin-top: 24px !important;
+	}
+}
+
+#docs-right.opened{
+	width: 0% !important;
+	height: 0px;
+	opacity: 0 !important;
+	animation: endOverflowHidden 0.75s linear forwards;
+}
+#docs-right-content{
+	max-width: 1200px;
+}
+#docs-right-content img{
+	max-height: 600px;
+	max-width: 100%;
+}
+#docs-left-content{
+	transition: opacity 0.5s linear;
+	opacity: 0;
+	color:#1eeb9c;
+}
+
+#docs-left-content.opened{
+	opacity: 1 !important;
+}
+
+@media (min-width: 992px) {
+	#docs-left-content {
+		opacity: 1 !important;
+	}
+}
+
+#docs-left-content > ul > li > a {
+	color:white;
+	font-weight: bold;
+}
+#docs-left-content > ul > li > a:hover {
+	color:white;
+	font-weight: bold;
+}
+
+@keyframes endOverflowHidden{
+	100% {
+		overflow: hidden;
+	}
+}
+
+.docs-toggler-button{
+	margin-top: 12px;
+	background-color: #4847474d;
+	padding: 4px 12px;
+	border: 1px solid white;
+    border-radius: 0.25rem;
+	width: 56px;
+	height: 40px;
+}
+.small-note{
+	color:#bababa !important;
+}
