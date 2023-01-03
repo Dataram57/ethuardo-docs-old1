@@ -1,1 +1,1 @@
-go to /docs
+go to <a href='/docs'>/docs</a>

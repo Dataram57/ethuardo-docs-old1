@@ -38,10 +38,7 @@
 			</div>
 		</div>
 	</div>
-	
 	<title></title>
-    <?php
-?>
 </head>
 <body class='bg0'>
 <nav class="navbar navbar-expand-lg navbar-dark bg1">
@@ -52,7 +49,6 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<a class="navbar-brand" href="/">Ethuardo</a>
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				
 				<li class="nav-item">
 					<a class="nav-link" href="/browse">Browse</a>
 				</li>
@@ -62,25 +58,39 @@
 				<li class="nav-item">
 					<a class="nav-link colorRainbow font-weight-bold linkBasic" href="/newbies">Newbies</a>
 				</li>
-				
-				<!--
-				<li class="nav-item">
-					<a class="nav-link" href="/about">About</a>
-				</li>
-				
-				<form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" id='inputSearch'>
-					<button class="btn btn-outline-light" type="submit" onclick='SearchAssets();'>Search</button>
-				</form>
-				<!---->
 			</ul>
 		</div>
+        <script type="text/javascript">
+            const userId='0';
+        </script>
+        <div class="d-flex align-items-center d-flex" id='profileBar'>
+            <div>
+                <a href='#' class='text-center ' onclick='OrderManager()'>
+                    <img src="/img/_block.svg"  height="30" loading="lazy"/>
+                    <a class='color1 text-decoration-none' id='OrderManagerCounter'></a>
+                </a>
+            </div>
+            <div class='pad2'></div>
+            <div>
+                <a href='#' onclick='CartManager()'>
+                    <img src="/img/_cart.svg"  height="30" loading="lazy"/>
+                    <a class='color1 text-decoration-none' id='CartManagerCounter'></a>
+                </a>
+            </div>
+            <div class='pad2'></div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+            </ul>
+        </div>
 	</div>
 </nav>
 <!--Special externals for /docs-->
 <link rel="stylesheet" href="/css/docs.css">
 <script type="text/javascript" src="/js/docs.js"></script>
 <!--Body-->
+<!--/docs starts here-->
 <div class='container-fluid'>
     <div class='text-break d-flex'>
         <div id='docs-left'>
@@ -103,28 +113,28 @@
                     <li><a href='/docs/'>Docs</a></li>
                     <li><a href='/docs/introduction'>Introduction</a></li>
                     <li><a href='/docs/create-an-account'>Create an Account</a></li>
-                    <li><a href='/docs/deposit-money'>Deposit Money</a></li>
-                    <li><a href='/docs/withdraw-money'>Withdraw Money</a></li>
-                    <li><a href='/docs/buy-an-asset'>Buy an Asset</a></li>
-                    <li><a href='/docs/make-a-report'>Make a Report</a></li>
+                    <li><a class='docs-wip' href='/docs/deposit-money'>Deposit Money</a></li>
+                    <li><a class='docs-wip' href='/docs/withdraw-money'>Withdraw Money</a></li>
+                    <li><a class='docs-wip' href='/docs/buy-an-asset'>Buy an Asset</a></li>
+                    <li><a class='docs-wip' href='/docs/make-a-report'>Make a Report</a></li>
                     <li><a href='/docs/rules'>Rules</a></li>
                 </ul>
                 <h5>Selling</h5>
                 <ul>
-                    <li><a href='/docs/'>Introduction</a></li>
-                    <li><a href='/docs/seller/become-a-seller'>Become a seller</a></li>
-                    <li><a href='/docs/seller/create-an-asset'>Create an Asset</a></li>
-                    <li><a href='/docs/seller/rules'>Rules</a></li>
+                    <li><a class='docs-wip' href='/docs/'>Introduction</a></li>
+                    <li><a class='docs-wip' href='/docs/seller/become-a-seller'>Become a seller</a></li>
+                    <li><a class='docs-wip' href='/docs/seller/create-an-asset'>Create an Asset</a></li>
+                    <li><a class='docs-wip' href='/docs/seller/rules'>Rules</a></li>
                 </ul>
                 <h5>Legal</h5>
                 <ul>
-                    <li><a href='/docs/legal/terms-of-service/'>Terms of service</a></li>
-                    <li><a href='/docs/legal/privacy-policies'>Privacy policies</a></li>
-                    <li><a href='/docs/legal/cookie-policy'>Cookie Policy</a></li>
+                    <li><a class='docs-wip' href='/docs/legal/terms-of-service/'>Terms of service</a></li>
+                    <li><a class='docs-wip' href='/docs/legal/privacy-policies'>Privacy policies</a></li>
+                    <li><a class='docs-wip' href='/docs/legal/cookie-policy'>Cookie Policy</a></li>
                 </ul>
                 <h5>Other</h5>
                 <ul>
-                    <li><a href='/docs/development/'>Development</a></li>
+                    <li><a class='docs-wip' href='/docs/development/'>Development</a></li>
                 </ul>
             </div>
         </div>

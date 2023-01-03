@@ -1,3 +1,10 @@
+/*
+================================
+|							   |
+|             /docs            |
+|							   |
+================================
+*/
 function InitPageDocs(){
 	document.title = title;
 	tagLeftContent = document.getElementById('docs-left-content');
@@ -28,13 +35,29 @@ function InitPageDocs(){
 	};
 
 	//adding extras
+	const tagRightContent = document.getElementById('docs-right-content');
 	//imgs
 	Click2 = (e) => {
 		PopupMsg(e.target.alt,'<div class="text-center"><img src="' + e.target.src + '"/></div>');
 	}
-	let arr = $('#docs-right-content > img');
-	for(let i = arr.length - 1; i > -1; i--){
+	let arr = $('img');
+	let i = 0;
+	for(i = arr.length - 1; i > -1; i--)
+		if(IsElInEl(arr[i],tagRightContent)){
 		//add href
 		arr[i].onclick = Click2;
 	}
+	//a
+	arr = $('a');
+	for(i = arr.length - 1; i > -1; i--)
+		if(IsElInEl(arr[i],tagRightContent))
+			arr[i].classList.add('docs-link');
+}
+
+function IsElInEl(el,parent){
+	while(el != null){
+		el = el.parentElement;
+		if(el == parent) return true;
+	}
+	return false;
 }

@@ -2,6 +2,7 @@
         </div>
     </div>
 </div>
+<!--/docs ends here-->
 <div class="container-fluid text-center"> 
 	<div class="col-12 pad2 mt-5">
 		<a href="/privacy" class="link1">Privacy policies</a>

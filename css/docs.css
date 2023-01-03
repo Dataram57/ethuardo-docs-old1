@@ -56,7 +56,7 @@
 	max-width: 1200px;
 }
 #docs-right-content img{
-	max-height: 600px;
+	max-height: 400px;
 	max-width: 100%;
 }
 #docs-left-content{
@@ -101,4 +101,13 @@
 }
 .small-note{
 	color:#bababa !important;
+}
+.docs-link{
+	color:#19b67a;
+}
+.docs-link:hover{
+	color:#21fea9;
+}
+.docs-wip{
+	color:#7f7f7f !important;
 }
