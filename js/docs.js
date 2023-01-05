@@ -38,7 +38,7 @@ function InitPageDocs(){
 	const tagRightContent = document.getElementById('docs-right-content');
 	//imgs
 	Click2 = (e) => {
-		PopupMsg(e.target.alt,'<div class="text-center"><img src="' + e.target.src + '"/></div>');
+		PopupMsg(e.target.alt,'<div class="text-center"><img class="mw-100" src="' + e.target.src + '"/></div>');
 	}
 	let arr = $('img');
 	let i = 0;

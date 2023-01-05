@@ -29,8 +29,8 @@
     <img src='/img/tutorial-register-tx-detail.png' alt='Transaction detail'></img>
     <p>The message in the transaction contains a hash from the hash of your password salted with a login_index(used for logging in)</p>
 </div>
-<p>Once you have accepted the transaction, our servers will listen the blockchain to see if your transaction has found itself in a block, and then realise the action from the transaction message.<br> To check if the transaction was fully realised, click on the <img src='/img/_block.svg' width='32' height='32'/> to see the status of it.</p>
-<img src='/img/tutorial-register-done.png'/>
+<p>Once you have accepted the transaction, our servers will listen the blockchain to see if your transaction has found itself in a block, and then realise the action from the transaction message.<br> To check if the transaction was fully realised, click on the <img src='/img/_block.svg' width='32' height='32' alt='Orders icon'/> to see the status of it.</p>
+<img src='/img/tutorial-register-done.png' alt='Registration complete'/>
 <p>If the transaction was successful, go to <a href='/login'>/login</a> and try to login!</p>
 
 <?php

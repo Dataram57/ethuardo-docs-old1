@@ -113,8 +113,8 @@
                     <li><a href='/docs/'>Docs</a></li>
                     <li><a href='/docs/introduction'>Introduction</a></li>
                     <li><a href='/docs/create-an-account'>Create an Account</a></li>
-                    <li><a class='docs-wip' href='/docs/deposit-money'>Deposit Money</a></li>
-                    <li><a class='docs-wip' href='/docs/withdraw-money'>Withdraw Money</a></li>
+                    <li><a href='/docs/deposit-money'>Deposit Money</a></li>
+                    <li><a href='/docs/withdraw-money'>Withdraw Money</a></li>
                     <li><a class='docs-wip' href='/docs/buy-an-asset'>Buy an Asset</a></li>
                     <li><a class='docs-wip' href='/docs/make-a-report'>Make a Report</a></li>
                     <li><a href='/docs/rules'>Rules</a></li>

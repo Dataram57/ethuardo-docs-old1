@@ -2,7 +2,7 @@
     $root = $_SERVER['DOCUMENT_ROOT'];
     include $root . '/Docs-top.php';
 ?>
-    <script>title = 'Create an Account';</script>
+    <script>title = 'Deposit Money';</script>
     <h1>Rules</h1>
     <p>As a normal user, you are obligated to follow these rules, otherwise, your account may be blocked from any public interaction.</p>
     <ol>
